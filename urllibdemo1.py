@@ -20,8 +20,8 @@ soup=BeautifulSoup(s)
 a=soup.find(class_='main-navigation')
 link=a.find_all('a')
 for l in link:
-        names = l.contents[0]  #links present in the website 
-        links1 = l.get('href') #names of the categories in the website
+        names = l.contents[0]  #names present in the website 
+        links1 = l.get('href') #links of the categories in the website
         print(names)
         print(links1)
         #place the links and names in the columns in excel sheet.
